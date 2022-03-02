@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/model-marketing
+model-marketing.so
+model-marketing.dylib
+model-marketing.dll
+model-marketing.a
+model-marketing.lib
+model-marketing-test-*
+*.exe
+*.o
+*.obj
+*.lst
