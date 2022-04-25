@@ -5,7 +5,7 @@ import models.marketing;
 
 // 
 class DMRKPage : DOOPEntity {
-  mixin(OOPEntityThis!("MRKPage"));
+  mixin(EntityThis!("MRKPage"));
 
   override void initialize() {
     super.initialize;
@@ -62,7 +62,7 @@ class DMRKPage : DOOPEntity {
       .registerPath("marketing_pages");
   }
 }
-mixin(OOPEntityCalls!("MRKPage"));  
+mixin(EntityCalls!("MRKPage"));  
 
 unittest {
   version(test_model_crm) {

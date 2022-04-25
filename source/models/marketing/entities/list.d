@@ -5,7 +5,7 @@ import models.marketing;
 
 // Group of existing or potential customers created for a marketing campaign or other sales purposes.
 class DMRKList : DOOPEntity {
-  mixin(OOPEntityThis!("MRKList"));
+  mixin(EntityThis!("MRKList"));
 
   override void initialize() {
     super.initialize;
@@ -54,7 +54,7 @@ class DMRKList : DOOPEntity {
       .registerPath("marketing_lists");
   }
 }
-mixin(OOPEntityCalls!("MRKList")); 
+mixin(EntityCalls!("MRKList")); 
 
 unittest {
   version(test_model_crm) {

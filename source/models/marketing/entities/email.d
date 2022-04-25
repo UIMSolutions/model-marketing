@@ -5,7 +5,7 @@ import models.marketing;
 
 // 
 class DMRKEmail : DOOPEntity {
-  mixin(OOPEntityThis!("MRKEmail"));
+  mixin(EntityThis!("MRKEmail"));
 
   override void initialize() {
     super.initialize;
@@ -49,7 +49,7 @@ class DMRKEmail : DOOPEntity {
       .registerPath("marketing_emails");
   }
 }
-mixin(OOPEntityCalls!("MRKEmail"));
+mixin(EntityCalls!("MRKEmail"));
 
 unittest {
   version(test_model_crm) {

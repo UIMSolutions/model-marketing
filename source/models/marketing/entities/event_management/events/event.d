@@ -5,7 +5,7 @@ import models.marketing;
 
 // Container to manage and plan marketing activities that take place at a specific venue or location.
 class DMRKEvent : DOOPEntity {
-  mixin(OOPEntityThis!("MRKEvent"));
+  mixin(EntityThis!("MRKEvent"));
 
   override void initialize() {
     super.initialize;
@@ -167,7 +167,7 @@ class DMRKEvent : DOOPEntity {
       .registerPath("marketing_event");
   }
 }
-mixin(OOPEntityCalls!("MRKEvent")); 
+mixin(EntityCalls!("MRKEvent")); 
 
 unittest {
   version(test_model_crm) {

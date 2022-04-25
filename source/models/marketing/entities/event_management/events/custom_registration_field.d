@@ -5,7 +5,7 @@ import models.marketing;
 
 // 
 class DMRKEventCustomRegistrationField : DOOPEntity {
-  mixin(OOPEntityThis!("MRKEventCustomRegistrationField"));
+  mixin(EntityThis!("MRKEventCustomRegistrationField"));
 
   override void initialize() {
     super.initialize;
@@ -35,7 +35,7 @@ class DMRKEventCustomRegistrationField : DOOPEntity {
       .registerPath("marketing_eventcustomregistrationfields");
   }
 }
-mixin(OOPEntityCalls!("MRKEventCustomRegistrationField")); 
+mixin(EntityCalls!("MRKEventCustomRegistrationField")); 
 
 unittest {
   version(test_model_crm) {

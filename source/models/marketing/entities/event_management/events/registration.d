@@ -5,7 +5,7 @@ import models.marketing;
 
 // 
 class DMRKEventRegistration : DOOPEntity {
-  mixin(OOPEntityThis!("MRKEventRegistration"));
+  mixin(EntityThis!("MRKEventRegistration"));
 
   override void initialize() {
     super.initialize;
@@ -56,7 +56,7 @@ class DMRKEventRegistration : DOOPEntity {
       .registerPath("marketing_eventregistrations");
   }
 }
-mixin(OOPEntityCalls!("MRKEventRegistration")); 
+mixin(EntityCalls!("MRKEventRegistration")); 
 
 unittest {
   version(test_model_crm) {

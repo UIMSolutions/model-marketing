@@ -5,7 +5,7 @@ import models.marketing;
 
 // 
 class DMRKGeoPin : DOOPEntity {
-  mixin(OOPEntityThis!("MRKGeoPin"));
+  mixin(EntityThis!("MRKGeoPin"));
 
   override void initialize() {
     super.initialize;
@@ -60,7 +60,7 @@ class DMRKGeoPin : DOOPEntity {
       .registerPath("marketing_geopins");
   }
 }
-mixin(OOPEntityCalls!("MRKGeoPin")); 
+mixin(EntityCalls!("MRKGeoPin")); 
 
 unittest {
   version(test_model_crm) {
