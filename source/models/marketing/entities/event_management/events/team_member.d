@@ -12,34 +12,34 @@ class DMRKEventTeamMember : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": OOPStringAttribute.descriptions(["en":"Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": OOPStringAttribute.descriptions(["en":"Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": OOPStringAttribute.descriptions(["en":"Date and time that the record was migrated."]),
+        "createdOnBehalfBy": StringAttributeClass, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": StringAttributeClass, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": StringAttributeClass, // Date and time that the record was migrated."]),
         "importSequenceNumber": OOPIntegerAttribute.descriptions(["en":"Sequence number of the import that created this record."]),
-        "ownerId": OOPUUIDAttribute.descriptions(["en":"Owner Id"]),
-        "ownerIdType": OOPStringAttribute.descriptions(["en":"The type of owner, either User or Team."]),
+        "ownerId": UUIDAttributeClass, // Owner Id"]),
+        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": OOPLinkAttribute("aplBusinessUnit").descriptions(["en":"Unique identifier for the business unit that owns the record"]),
-        "owningUserId": OOPStringAttribute.descriptions(["en":"Unique identifier of the user that owns the activity."]),
-        "owningTeamId": OOPStringAttribute.descriptions(["en":"Unique identifier for the team that owns the record."]),
+        "owningUserId": StringAttributeClass, // Unique identifier of the user that owns the activity."]),
+        "owningTeamId": StringAttributeClass, // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPIntegerAttribute.descriptions(["en":"For internal use only."]),
-        "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Time zone code that was in use when the record was created."]),
+        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "versionNumber": OOPIntegerAttribute.descriptions(["en":"Version Number"]),
-        "eventTeamMemberId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for entity instances"]),
-        "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Event Team Member"]),
-        "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Reason for the status of the Event Team Member"]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "name": OOPStringAttribute.descriptions(["en":"The name of the custom entity."]),
-        "company": OOPStringAttribute.descriptions(["en":""]),
-        "contact": OOPStringAttribute.descriptions(["en":""]),
-        "description": OOPStringAttribute.descriptions(["en":""]),
-        "email": OOPStringAttribute.descriptions(["en":""]),
-        "memberType": OOPStringAttribute.descriptions(["en":""]),
-        "memberType_display": OOPStringAttribute.descriptions(["en":""]),
-        "phone": OOPStringAttribute.descriptions(["en":""]),
-        "role": OOPStringAttribute.descriptions(["en":""]),
-        "role_display": OOPStringAttribute.descriptions(["en":""]),
-        "user": OOPStringAttribute.descriptions(["en":""]),
+        "eventTeamMemberId": UUIDAttributeClass, // Unique identifier for entity instances"]),
+        "stateCode": StringAttributeClass, // Status of the Event Team Member"]),
+        "stateCode_display": StringAttributeClass, //
+        "statusCode": StringAttributeClass, // Reason for the status of the Event Team Member"]),
+        "statusCode_display": StringAttributeClass, //
+        "name": StringAttributeClass, // The name of the custom entity."]),
+        "company": StringAttributeClass, //
+        "contact": StringAttributeClass, //
+        "description": StringAttributeClass, //
+        "email": StringAttributeClass, //
+        "memberType": StringAttributeClass, //
+        "memberType_display": StringAttributeClass, //
+        "phone": StringAttributeClass, //
+        "role": StringAttributeClass, //
+        "role_display": StringAttributeClass, //
+        "user": StringAttributeClass, //
       ])
       .registerPath("marketing_eventteammembers");
   }

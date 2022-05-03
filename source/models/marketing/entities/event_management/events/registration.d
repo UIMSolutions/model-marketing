@@ -16,42 +16,42 @@ class DMRKEventRegistration : DOOPEntity {
         "modifiedOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": OOPTimestampAttribute.descriptions(["en":"Date and time that the record was migrated."]),
         "importSequenceNumber": OOPIntegerAttribute.descriptions(["en":"Sequence number of the import that created this record."]),
-        "ownerId": OOPUUIDAttribute.descriptions(["en":"Owner Id"]),
-        "ownerIdType": OOPStringAttribute.descriptions(["en":"The type of owner, either User or Team."]),
+        "ownerId": UUIDAttributeClass, // Owner Id"]),
+        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": OOPLinkAttribute("aplBusinessUnit").descriptions(["en":"Unique identifier for the business unit that owns the record"]),
         "owningUserId": OOPLinkAttribute("aplUser").descriptions(["en":"Unique identifier of the user that owns the activity."]),
         "owningTeamId": OOPLinkAttribute("aplTeam").descriptions(["en":"Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPIntegerAttribute.descriptions(["en":"For internal use only."]),
-        "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Time zone code that was in use when the record was created."]),
-        "eventRegistrationId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for entity instances"]),
-        "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Event Registration"]),
-        "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Reason for the status of the Event Registration"]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "name": OOPStringAttribute.descriptions(["en":"The name of the custom entity."]),
-        "area": OOPStringAttribute.descriptions(["en":""]),
-        "area_display": OOPStringAttribute.descriptions(["en":""]),
-        "companySize": OOPStringAttribute.descriptions(["en":""]),
-        "companySize_display": OOPStringAttribute.descriptions(["en":""]),
+        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
+        "eventRegistrationId": UUIDAttributeClass, // Unique identifier for entity instances"]),
+        "stateCode": StringAttributeClass, // Status of the Event Registration"]),
+        "stateCode_display": StringAttributeClass, //
+        "statusCode": StringAttributeClass, // Reason for the status of the Event Registration"]),
+        "statusCode_display": StringAttributeClass, //
+        "name": StringAttributeClass, // The name of the custom entity."]),
+        "area": StringAttributeClass, //
+        "area_display": StringAttributeClass, //
+        "companySize": StringAttributeClass, //
+        "companySize_display": StringAttributeClass, //
         "contactId": OOPLinkAttribute("aplContact").descriptions(["en":""]),
-        "eventId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Event associated with Event Registration."]),
-        "industry": OOPStringAttribute.descriptions(["en":""]),
-        "industry_display": OOPStringAttribute.descriptions(["en":""]),
-        "isCanceled": OOPBooleanAttribute.descriptions(["en":""]),
-        "memo": OOPStringAttribute.descriptions(["en":""]),
-        "primaryRole": OOPStringAttribute.descriptions(["en":"Primary Role of the event attendee."]),
-        "primaryRole_display": OOPStringAttribute.descriptions(["en":""]),
-        "publishingState": OOPStringAttribute.descriptions(["en":"The publishing state of the event registration."]),
-        "publishingState_display": OOPStringAttribute.descriptions(["en":""]),
-        "registeredBy": OOPStringAttribute.descriptions(["en":"A lookup to the contact who created this event registration"]),
-        "registrationNotificationSeen": OOPStringAttribute.descriptions(["en":"Whether the registration creation notification has been seen or not"]),
-        "registrationStatus": OOPStringAttribute.descriptions(["en":""]),
-        "syncedWithProvider": OOPStringAttribute.descriptions(["en":"A flag that indicates that the registration was synced with provider"]),
-        "syncedWithProvider_display": OOPStringAttribute.descriptions(["en":""]),
-        "timesCheckedIn": OOPStringAttribute.descriptions(["en":"Hidden field. Number of Event Check-ins related to this ER.Used as partial aggregation for Check-in count of Event.Increasing and decreasing done by corresponding workflows."]),
-        "webinarRegistrationID": OOPStringAttribute.descriptions(["en":"Webinar ID of the Event Registration."]),
-        "yearsInIndustry": OOPStringAttribute.descriptions(["en":""]),
-        "yearsInIndustry_display": OOPStringAttribute.descriptions(["en":""]),
+        "eventId": UUIDAttributeClass, // Unique identifier for Event associated with Event Registration."]),
+        "industry": StringAttributeClass, //
+        "industry_display": StringAttributeClass, //
+        "isCanceled": BooleanAttributeClass, //
+        "memo": StringAttributeClass, //
+        "primaryRole": StringAttributeClass, // Primary Role of the event attendee."]),
+        "primaryRole_display": StringAttributeClass, //
+        "publishingState": StringAttributeClass, // The publishing state of the event registration."]),
+        "publishingState_display": StringAttributeClass, //
+        "registeredBy": StringAttributeClass, // A lookup to the contact who created this event registration"]),
+        "registrationNotificationSeen": StringAttributeClass, // Whether the registration creation notification has been seen or not"]),
+        "registrationStatus": StringAttributeClass, //
+        "syncedWithProvider": StringAttributeClass, // A flag that indicates that the registration was synced with provider"]),
+        "syncedWithProvider_display": StringAttributeClass, //
+        "timesCheckedIn": StringAttributeClass, // Hidden field. Number of Event Check-ins related to this ER.Used as partial aggregation for Check-in count of Event.Increasing and decreasing done by corresponding workflows."]),
+        "webinarRegistrationID": StringAttributeClass, // Webinar ID of the Event Registration."]),
+        "yearsInIndustry": StringAttributeClass, //
+        "yearsInIndustry_display": StringAttributeClass, //
       ])
       .registerPath("marketing_eventregistrations");
   }

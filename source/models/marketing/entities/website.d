@@ -12,30 +12,30 @@ class DMRKWebsite : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": OOPStringAttribute.descriptions(["en":"Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": OOPStringAttribute.descriptions(["en":"Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": OOPStringAttribute.descriptions(["en":"Date and time that the record was migrated."]),
+        "createdOnBehalfBy": StringAttributeClass, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": StringAttributeClass, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": StringAttributeClass, // Date and time that the record was migrated."]),
         "importSequenceNumber": OOPIntegerAttribute.descriptions(["en":"Sequence number of the import that created this record."]),
-        "ownerId": OOPStringAttribute.descriptions(["en":"Owner Id"]),
-        "ownerIdType": OOPStringAttribute.descriptions(["en":"The type of owner, either User or Team."]),
+        "ownerId": StringAttributeClass, // Owner Id"]),
+        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": OOPLinkAttribute("aplBusinessUnit").descriptions(["en":"Unique identifier for the business unit that owns the record"]),
-        "owningUser": OOPStringAttribute.descriptions(["en":"Unique identifier of the user that owns the activity."]),
-        "owningTeam": OOPStringAttribute.descriptions(["en":"Unique identifier for the team that owns the record."]),
+        "owningUser": StringAttributeClass, // Unique identifier of the user that owns the activity."]),
+        "owningTeam": StringAttributeClass, // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPIntegerAttribute.descriptions(["en":"For internal use only."]),
-        "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Time zone code that was in use when the record was created."]),
-        "websiteId": OOPStringAttribute.descriptions(["en":"Unique ID for entity instances."]),
-        "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Website"]),
-        "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Website status reason"]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "insightsPlaceholder": OOPStringAttribute.descriptions(["en":""]),
-        "javascriptcode": OOPStringAttribute.descriptions(["en":""]),
-        "remoteWebsiteID": OOPStringAttribute.descriptions(["en":"Unique ID for remote entity instances."]),
-        "shouldBeRemoved": OOPStringAttribute.descriptions(["en":""]),
-        "timeout": OOPStringAttribute.descriptions(["en":""]),
+        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
+        "websiteId": StringAttributeClass, // Unique ID for entity instances."]),
+        "stateCode": StringAttributeClass, // Status of the Website"]),
+        "stateCode_display": StringAttributeClass, //
+        "statusCode": StringAttributeClass, // Website status reason"]),
+        "statusCode_display": StringAttributeClass, //
+        "insightsPlaceholder": StringAttributeClass, //
+        "javascriptcode": StringAttributeClass, //
+        "remoteWebsiteID": StringAttributeClass, // Unique ID for remote entity instances."]),
+        "shouldBeRemoved": StringAttributeClass, //
+        "timeout": StringAttributeClass, //
         "Url": OOPUrlAttribute.descriptions(["en":""]),
-        "purpose": OOPStringAttribute.descriptions(["en":""]),
-        "purpose_display": OOPStringAttribute.descriptions(["en":""]),
+        "purpose": StringAttributeClass, //
+        "purpose_display": StringAttributeClass, //
       ])
       .registerPath("marketing_website");
   }

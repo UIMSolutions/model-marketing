@@ -12,50 +12,50 @@ class DMRKGeoPin : DOOPEntity {
 
     this
         .addValues([
-          "createdOnBehalfBy": OOPStringAttribute.descriptions(["en":"Shows who created the record on behalf of another user."]), 
-          "modifiedOnBehalfBy": OOPStringAttribute.descriptions(["en":"Shows who last updated the record on behalf of another user."]), 
-          "overriddenCreatedOn": OOPStringAttribute.descriptions(["en":"Date and time that the record was migrated."]), 
+          "createdOnBehalfBy": StringAttributeClass, // Shows who created the record on behalf of another user."]), 
+          "modifiedOnBehalfBy": StringAttributeClass, // Shows who last updated the record on behalf of another user."]), 
+          "overriddenCreatedOn": StringAttributeClass, // Date and time that the record was migrated."]), 
           "importSequenceNumber": OOPIntegerAttribute.descriptions(["en":"Sequence number of the import that created this record."]), 
-          "ownerId": OOPStringAttribute.descriptions(["en":"Owner Id"]), 
-          "ownerIdType": OOPStringAttribute.descriptions(["en":"The type of owner, either User or Team."]), 
+          "ownerId": StringAttributeClass, // Owner Id"]), 
+          "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]), 
           "owningBusinessUnitId": OOPLinkAttribute("aplBusinessUnit").descriptions(["en":"Unique identifier for the business unit that owns the record"]), 
-          "owningUser": OOPStringAttribute.descriptions(["en":"Unique identifier of the user that owns the activity."]), 
-          "owningTeam": OOPStringAttribute.descriptions(["en":"Unique identifier for the team that owns the record."]), 
+          "owningUser": StringAttributeClass, // Unique identifier of the user that owns the activity."]), 
+          "owningTeam": StringAttributeClass, // Unique identifier for the team that owns the record."]), 
           "timeZoneRuleVersionNumber": OOPIntegerAttribute.descriptions(["en":"For internal use only."]), 
-          "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Time zone code that was in use when the record was created."]), 
-          "geopinId": OOPStringAttribute.descriptions(["en":"Unique ID for entity instances."]), 
-          "stateCode": OOPStringAttribute.descriptions(["en":"Status of the geo pin."]), 
-          "stateCode_display": OOPStringAttribute.descriptions(["en":""]), 
-          "statusCode": OOPStringAttribute.descriptions(["en":"Geo-pin status reason"]), 
-          "statusCode_display": OOPStringAttribute.descriptions(["en":""]), 
-          "campaignGeoPinsId": OOPStringAttribute.descriptions(["en":"Unique ID for the campaign associated with the geo pin."]), 
-          "centerLatitude": OOPStringAttribute.descriptions(["en":""]), 
-          "centerLongitude": OOPStringAttribute.descriptions(["en":""]), 
-          "city": OOPStringAttribute.descriptions(["en":"City"]), 
-          "contactGeoPinsId": OOPStringAttribute.descriptions(["en":"Unique ID for the contact associated with the geo pin."]), 
-          "country": OOPStringAttribute.descriptions(["en":"Country/Region"]), 
-          "customerJourney": OOPStringAttribute.descriptions(["en":""]), 
-          "marketingformGeoPinsId": OOPStringAttribute.descriptions(["en":"Unique ID for the marketing form associated with the geo pin."]), 
-          "kpiEmailClickedCount": OOPStringAttribute.descriptions(["en":""]), 
-          "kpiEmailOpenedCount": OOPStringAttribute.descriptions(["en":""]), 
-          "kpiRedirectLinkClickedCount": OOPStringAttribute.descriptions(["en":""]), 
-          "kpiWebsiteClickedCount": OOPStringAttribute.descriptions(["en":""]), 
-          "kpiWebsiteVisitedCount": OOPStringAttribute.descriptions(["en":""]), 
-          "kpiFormSubmittedCount": OOPStringAttribute.descriptions(["en":""]), 
-          "leadGeoPinsId": OOPStringAttribute.descriptions(["en":"Unique ID for the lead associated with the geo pin."]), 
-          "marketingEmailGeoPinsId": OOPStringAttribute.descriptions(["en":"Unique ID for the marketing email associated with the geo pin."]), 
-          "marketingPageGeoPinsId": OOPStringAttribute.descriptions(["en":"Unique ID for the marketing page associated with the geo pin."]), 
-          "northwestLatitude": OOPStringAttribute.descriptions(["en":""]), 
-          "northwestLongitude": OOPStringAttribute.descriptions(["en":""]), 
-          "postalCode": OOPStringAttribute.descriptions(["en":"Postal Code"]), 
-          "redirectURLGeoPinsId": OOPStringAttribute.descriptions(["en":"Unique ID for the redirect URL associated with the geo pin."]), 
-          "requestBuilderService_mktgeopins": OOPStringAttribute.descriptions(["en":""]), 
-          "resultParserService_mktgeopins": OOPStringAttribute.descriptions(["en":""]), 
-          "serverIdMarketing": OOPStringAttribute.descriptions(["en":""]), 
-          "southeastLatitude": OOPStringAttribute.descriptions(["en":""]), 
-          "southeastLongitude": OOPStringAttribute.descriptions(["en":""]), 
-          "state": OOPStringAttribute.descriptions(["en":"State"]), 
-          "websiteGeoPinsId": OOPStringAttribute.descriptions(["en":"Unique ID for the website associated with the geo pin."]), 
+          "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]), 
+          "geopinId": StringAttributeClass, // Unique ID for entity instances."]), 
+          "stateCode": StringAttributeClass, // Status of the geo pin."]), 
+          "stateCode_display": StringAttributeClass, // 
+          "statusCode": StringAttributeClass, // Geo-pin status reason"]), 
+          "statusCode_display": StringAttributeClass, // 
+          "campaignGeoPinsId": StringAttributeClass, // Unique ID for the campaign associated with the geo pin."]), 
+          "centerLatitude": StringAttributeClass, // 
+          "centerLongitude": StringAttributeClass, // 
+          "city": StringAttributeClass, // City"]), 
+          "contactGeoPinsId": StringAttributeClass, // Unique ID for the contact associated with the geo pin."]), 
+          "country": StringAttributeClass, // Country/Region"]), 
+          "customerJourney": StringAttributeClass, // 
+          "marketingformGeoPinsId": StringAttributeClass, // Unique ID for the marketing form associated with the geo pin."]), 
+          "kpiEmailClickedCount": StringAttributeClass, // 
+          "kpiEmailOpenedCount": StringAttributeClass, // 
+          "kpiRedirectLinkClickedCount": StringAttributeClass, // 
+          "kpiWebsiteClickedCount": StringAttributeClass, // 
+          "kpiWebsiteVisitedCount": StringAttributeClass, // 
+          "kpiFormSubmittedCount": StringAttributeClass, // 
+          "leadGeoPinsId": StringAttributeClass, // Unique ID for the lead associated with the geo pin."]), 
+          "marketingEmailGeoPinsId": StringAttributeClass, // Unique ID for the marketing email associated with the geo pin."]), 
+          "marketingPageGeoPinsId": StringAttributeClass, // Unique ID for the marketing page associated with the geo pin."]), 
+          "northwestLatitude": StringAttributeClass, // 
+          "northwestLongitude": StringAttributeClass, // 
+          "postalCode": StringAttributeClass, // Postal Code"]), 
+          "redirectURLGeoPinsId": StringAttributeClass, // Unique ID for the redirect URL associated with the geo pin."]), 
+          "requestBuilderService_mktgeopins": StringAttributeClass, // 
+          "resultParserService_mktgeopins": StringAttributeClass, // 
+          "serverIdMarketing": StringAttributeClass, // 
+          "southeastLatitude": StringAttributeClass, // 
+          "southeastLongitude": StringAttributeClass, // 
+          "state": StringAttributeClass, // State"]), 
+          "websiteGeoPinsId": StringAttributeClass, // Unique ID for the website associated with the geo pin."]), 
       ])
       .registerPath("marketing_geopins");
   }
