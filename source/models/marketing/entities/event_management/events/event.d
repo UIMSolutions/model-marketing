@@ -11,7 +11,7 @@ class DMRKEvent : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "createdOnBehalfBy": OOPStringAttribute.descriptions(["en":"Shows who created the record on behalf of another user."]),
         "modifiedOnBehalfBy": OOPStringAttribute.descriptions(["en":"Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": OOPStringAttribute.descriptions(["en":"Date and time that the record was migrated."]),
@@ -58,13 +58,13 @@ class DMRKEvent : DOOPEntity {
         "description": OOPStringAttribute.descriptions(["en":""]),
         "developMarketingPlan": OOPStringAttribute.descriptions(["en":""]),
         "developMarketingPlan_display": OOPStringAttribute.descriptions(["en":""]),
-        "earlyBirdCutOffDate": OOPAttributeDate.descriptions(["en":""]),
+        "earlyBirdCutOffDate": DateAttributeClass, // 
         "eventDebriefing": OOPStringAttribute.descriptions(["en":""]),
         "eventDebriefing_display": OOPStringAttribute.descriptions(["en":""]),
-        "eventEndDate": OOPAttributeDate.descriptions(["en":""]),
+        "eventEndDate": DateAttributeClass, // 
         "eventFormat": OOPStringAttribute.descriptions(["en":""]),
         "eventFormat_display": OOPStringAttribute.descriptions(["en":""]),
-        "eventStartDate": OOPAttributeDate.descriptions(["en":""]),
+        "eventStartDate": DateAttributeClass, // 
         "eventTimeZone": OOPStringAttribute.descriptions(["en":""]),
         "eventTimeZoneName": OOPStringAttribute.descriptions(["en":""]),
         "eventType": OOPStringAttribute.descriptions(["en":""]),
@@ -158,7 +158,7 @@ class DMRKEvent : DOOPEntity {
         "sendSurveys_display": OOPStringAttribute.descriptions(["en":""]),
         "eventURLspecified": OOPStringAttribute.descriptions(["en":"Determines whether an event URL is specified."]),
         "sessionsCount": OOPStringAttribute.descriptions(["en":"The number of sessions in this event"]),
-        "sessionsCountDate": OOPAttributeDate.descriptions(["en":"Last Updated time of rollup field Session count."]),
+        "sessionsCountDate": DateAttributeClass, // Last Updated time of rollup field Session count."]),
         "sessionsCountState": OOPStringAttribute.descriptions(["en":"State of rollup field Session count."]),
         "allowAnonymousRegistrations": OOPStringAttribute.descriptions(["en":""]),
         "portalBannerImage": OOPStringAttribute.descriptions(["en":"The portal banner image."]),

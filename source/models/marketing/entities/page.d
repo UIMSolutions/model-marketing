@@ -11,7 +11,7 @@ class DMRKPage : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "createdOnBehalfBy": OOPStringAttribute.descriptions(["en":"Shows who created the record on behalf of another user."]),
         "modifiedOnBehalfBy": OOPStringAttribute.descriptions(["en":"Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": OOPStringAttribute.descriptions(["en":"Date and time that the record was migrated."]),
@@ -50,8 +50,8 @@ class DMRKPage : DOOPEntity {
         "type_display": OOPStringAttribute.descriptions(["en":""]),
         "visualStyle": OOPStringAttribute.descriptions(["en":""]),
         "visualStyle_display": OOPStringAttribute.descriptions(["en":""]),
-        "lastPublishedDate": OOPAttributeDate.descriptions(["en":"Date and time when the marketing page was last published."]),
-        "lastUnpublishedDate": OOPAttributeDate.descriptions(["en":"Date and time when the marketing page was last unpublished."]),
+        "lastPublishedDate": DateAttributeClass, // Date and time when the marketing page was last published."]),
+        "lastUnpublishedDate": DateAttributeClass, // Date and time when the marketing page was last unpublished."]),
         "pageTemplate": OOPStringAttribute.descriptions(["en":""]),
         "webPage": OOPStringAttribute.descriptions(["en":""]),
         "webTemplate": OOPStringAttribute.descriptions(["en":""]),
