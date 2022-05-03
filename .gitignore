@@ -1,15 +1,24 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+
+# DUB
 .dub
 docs.json
 __dummy.html
 docs/
-/model-marketing
-model-marketing.so
-model-marketing.dylib
-model-marketing.dll
-model-marketing.a
-model-marketing.lib
-model-marketing-test-*
-*.exe
-*.o
-*.obj
+
+# Code coverage
 *.lst
