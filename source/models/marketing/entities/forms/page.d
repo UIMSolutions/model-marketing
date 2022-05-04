@@ -34,7 +34,7 @@ import models.marketing;
         "limitExceededMessage": StringAttributeClass, // 
         "marketingPage": StringAttributeClass, // The marketing page contains a marketing form."]), 
         "webSite": StringAttributeClass, // Web site contains Marketing Form"]), 
-        "redirectUrl": OOPUrlAttribute.descriptions(["en":""]), 
+        "redirectUrl": UrlAttributeClass, // "]), 
         "javascriptcode": StringAttributeClass, // 
       ])
       .registerPath("marketing_formpage");

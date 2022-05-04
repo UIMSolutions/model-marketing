@@ -33,7 +33,7 @@ class DMRKWebsite : DOOPEntity {
         "remoteWebsiteID": StringAttributeClass, // Unique ID for remote entity instances."]),
         "shouldBeRemoved": StringAttributeClass, //
         "timeout": StringAttributeClass, //
-        "Url": OOPUrlAttribute.descriptions(["en":""]),
+        "Url": UrlAttributeClass, // "]),
         "purpose": StringAttributeClass, //
         "purpose_display": StringAttributeClass, //
       ])

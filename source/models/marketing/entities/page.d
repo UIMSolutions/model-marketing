@@ -34,7 +34,7 @@ class DMRKPage : DOOPEntity {
         "contentType_display": StringAttributeClass, //
         "formPageMapping": StringAttributeClass, //
         "knownDomains": StringAttributeClass, //
-        "fullPageUrl": OOPUrlAttribute.descriptions(["en":""]),
+        "fullPageUrl": UrlAttributeClass, // "]),
         "insightsPlaceholder": StringAttributeClass, //
         "marketingPageTemplate": StringAttributeClass, //
         "marketingWebsite": StringAttributeClass, //
@@ -42,7 +42,7 @@ class DMRKPage : DOOPEntity {
         "marketType_display": StringAttributeClass, //
         "optimizedFor": StringAttributeClass, //
         "optimizedFor_display": StringAttributeClass, //
-        "partialUrl": OOPUrlAttribute.descriptions(["en":""]),
+        "partialUrl": UrlAttributeClass, // "]),
         "purpose": StringAttributeClass, //
         "purpose_display": StringAttributeClass, //
         "remoteWebsiteID": StringAttributeClass, // Unique ID for remote entity instances."]),

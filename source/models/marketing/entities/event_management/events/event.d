@@ -38,7 +38,7 @@ class DMRKEvent : DOOPEntity {
         "bookRooms": StringAttributeClass, //
         "bookRooms_display": StringAttributeClass, //
         "budgetAllocated": StringAttributeClass, //
-        "transactionCurrencyId": OOPLinkAttribute("aplCurrency").descriptions(["en":"Unique identifier of the currency associated with the entity."]),
+        "transactionCurrencyId": CurrencyIdAttributeClass, // Unique identifier of the currency associated with the entity."]),
         "exchangeRate": StringAttributeClass, // Exchange rate for the currency associated with the entity with respect to the base currency."]),
         "budgetAllocatedBase": StringAttributeClass, // Value of the Budget Allocated in base currency."]),
         "cateringRequired": StringAttributeClass, //
@@ -97,12 +97,12 @@ class DMRKEvent : DOOPEntity {
         "notifyAuthoritiesOfEvent_display": StringAttributeClass, //
         "planRegistration": StringAttributeClass, //
         "planRegistration_display": StringAttributeClass, //
-        "presentationManagerUrl": OOPUrlAttribute.descriptions(["en":""]),
+        "presentationManagerUrl": UrlAttributeClass, // "]),
         "primaryGoal": StringAttributeClass, //
         "primaryGoal_display": StringAttributeClass, //
         "primaryVenue": StringAttributeClass, //
         "producer": StringAttributeClass, //
-        "publicEventUrl": OOPUrlAttribute.descriptions(["en":""]),
+        "publicEventUrl": UrlAttributeClass, // "]),
         "publishStatus": StringAttributeClass, //
         "publishStatus_display": StringAttributeClass, //
         "readableEventID": StringAttributeClass, //
@@ -153,7 +153,7 @@ class DMRKEvent : DOOPEntity {
         "webinarStatus": StringAttributeClass, //
         "webinarStatusReason": StringAttributeClass, //
         "webinarType": StringAttributeClass, //
-        "webinarUrl": OOPUrlAttribute.descriptions(["en":"URL of the webinar. This might be URL of external webinar provider."]),
+        "webinarUrl": UrlAttributeClass, // URL of the webinar. This might be URL of external webinar provider."]),
         "sendSurveys": StringAttributeClass, //
         "sendSurveys_display": StringAttributeClass, //
         "eventURLspecified": StringAttributeClass, // Determines whether an event URL is specified."]),
@@ -162,7 +162,7 @@ class DMRKEvent : DOOPEntity {
         "sessionsCountState": StringAttributeClass, // State of rollup field Session count."]),
         "allowAnonymousRegistrations": StringAttributeClass, //
         "portalBannerImage": StringAttributeClass, // The portal banner image."]),
-        "eventUrl": OOPUrlAttribute.descriptions(["en":""])
+        "eventUrl": UrlAttributeClass, // "])
       ])
       .registerPath("marketing_event");
   }
