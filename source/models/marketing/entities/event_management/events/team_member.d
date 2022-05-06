@@ -12,34 +12,34 @@ class DMRKEventTeamMember : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": StringAttributeClass, // Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": StringAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": StringAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": IntegerAttributeClass, //Sequence number of the import that created this record."]),
-        "ownerId": UUIDAttributeClass, // Owner Id"]),
-        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": UUIDAttributeClass, //Unique identifier for the business unit that owns the record"]),
-        "owningUserId": StringAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": StringAttributeClass, // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": IntegerAttributeClass, //For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "versionNumber": IntegerAttributeClass, //Version Number"]),
-        "eventTeamMemberId": UUIDAttributeClass, // Unique identifier for entity instances"]),
-        "stateCode": StringAttributeClass, // Status of the Event Team Member"]),
-        "stateCode_display": StringAttributeClass, //
-        "statusCode": StringAttributeClass, // Reason for the status of the Event Team Member"]),
-        "statusCode_display": StringAttributeClass, //
-        "name": StringAttributeClass, // The name of the custom entity."]),
-        "company": StringAttributeClass, //
-        "contact": StringAttributeClass, //
-        "description": StringAttributeClass, //
-        "email": StringAttributeClass, //
-        "memberType": StringAttributeClass, //
-        "memberType_display": StringAttributeClass, //
-        "phone": StringAttributeClass, //
-        "role": StringAttributeClass, //
-        "role_display": StringAttributeClass, //
-        "user": StringAttributeClass, //
+        "createdOnBehalfBy": StringAttribute, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": StringAttribute, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": StringAttribute, // Date and time that the record was migrated."]),
+        "importSequenceNumber": IntegerAttribute, //Sequence number of the import that created this record."]),
+        "ownerId": UUIDAttribute, // Owner Id"]),
+        "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
+        "owningBusinessUnitId": UUIDAttribute, //Unique identifier for the business unit that owns the record"]),
+        "owningUserId": StringAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningTeamId": StringAttribute, // Unique identifier for the team that owns the record."]),
+        "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]),
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
+        "versionNumber": IntegerAttribute, //Version Number"]),
+        "eventTeamMemberId": UUIDAttribute, // Unique identifier for entity instances"]),
+        "stateCode": StringAttribute, // Status of the Event Team Member"]),
+        "stateCode_display": StringAttribute, //
+        "statusCode": StringAttribute, // Reason for the status of the Event Team Member"]),
+        "statusCode_display": StringAttribute, //
+        "name": StringAttribute, // The name of the custom entity."]),
+        "company": StringAttribute, //
+        "contact": StringAttribute, //
+        "description": StringAttribute, //
+        "email": StringAttribute, //
+        "memberType": StringAttribute, //
+        "memberType_display": StringAttribute, //
+        "phone": StringAttribute, //
+        "role": StringAttribute, //
+        "role_display": StringAttribute, //
+        "user": StringAttribute, //
       ])
       .registerPath("marketing_eventteammembers");
   }

@@ -12,157 +12,157 @@ class DMRKEvent : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": StringAttributeClass, // Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": StringAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": StringAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": IntegerAttributeClass, //Sequence number of the import that created this record."]),
-        "ownerId": UUIDAttributeClass, // Owner Id"]),
-        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": UUIDAttributeClass, //Unique identifier for the business unit that owns the record"]),
-        "owningUserId": StringAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": StringAttributeClass, // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": IntegerAttributeClass, //For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "eventId": UUIDAttributeClass, // Unique identifier for entity instances"]),
-        "stateCode": StringAttributeClass, // Status of the Event"]),
-        "stateCode_display": StringAttributeClass, //
-        "statusCode": StringAttributeClass, // Reason for the status of the Event"]),
-        "statusCode_display": StringAttributeClass, //
-        "processId": UUIDAttributeClass, // Contains the id of the process associated with the entity."]),
-        "stageId": UUIDAttributeClass, // Contains the id of the stage where the entity is located."]),
-        "traversedPath": StringAttributeClass, // A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur."]),
-        "entityImageId": UUIDAttributeClass, //
-        "baseRecurrentEventID": StringAttributeClass, //
-        "bookedFlightReservations": StringAttributeClass, // Flight reservations booking status"]),
-        "bookedFlightReservations_display": StringAttributeClass, //
-        "bookRooms": StringAttributeClass, //
-        "bookRooms_display": StringAttributeClass, //
-        "budgetAllocated": StringAttributeClass, //
-        "transactionCurrencyId": CurrencyIdAttributeClass, // Unique identifier of the currency associated with the entity."]),
-        "exchangeRate": StringAttributeClass, // Exchange rate for the currency associated with the entity with respect to the base currency."]),
-        "budgetAllocatedBase": StringAttributeClass, // Value of the Budget Allocated in base currency."]),
-        "cateringRequired": StringAttributeClass, //
-        "cateringRequired_display": StringAttributeClass, //
-        "checkInCount": StringAttributeClass, // Check-in count"]),
-        "confirmedHotelChoices": StringAttributeClass, // Hotel choices confirmation status"]),
-        "confirmedHotelChoices_display": StringAttributeClass, //
-        "countdownInDays": StringAttributeClass, //
-        "createMarketingCollateral": StringAttributeClass, //
-        "createMarketingCollateral_display": StringAttributeClass, //
-        "definePackagesandPricing": StringAttributeClass, //
-        "definePackagesandPricing_display": StringAttributeClass, //
-        "defineSessions": StringAttributeClass, //
-        "defineSessions_display": StringAttributeClass, //
-        "defineTeam": StringAttributeClass, //
-        "defineTeam_display": StringAttributeClass, //
-        "description": StringAttributeClass, //
-        "developMarketingPlan": StringAttributeClass, //
-        "developMarketingPlan_display": StringAttributeClass, //
-        "earlyBirdCutOffDate": DateAttributeClass, // 
-        "eventDebriefing": StringAttributeClass, //
-        "eventDebriefing_display": StringAttributeClass, //
-        "eventEndDate": DateAttributeClass, // 
-        "eventFormat": StringAttributeClass, //
-        "eventFormat_display": StringAttributeClass, //
-        "eventStartDate": DateAttributeClass, // 
-        "eventTimeZone": StringAttributeClass, //
-        "eventTimeZoneName": StringAttributeClass, //
-        "eventType": StringAttributeClass, //
-        "eventType_display": StringAttributeClass, //
-        "eventVenueCost": StringAttributeClass, //
-        "eventVenueCostBase": StringAttributeClass, // Value of the Event Venue Cost in base currency."]),
-        "expectedOutcome": StringAttributeClass, //
-        "followUpOnLeads": StringAttributeClass, //
-        "followUpOnLeads_display": StringAttributeClass, //
-        "guestLogistics": StringAttributeClass, // Whether guest logistics are required or not."]),
-        "guestLogistics_display": StringAttributeClass, //
-        "identifySpeakers": StringAttributeClass, //
-        "identifySpeakers_display": StringAttributeClass, //
-        "identifySponsors": StringAttributeClass, //
-        "identifySponsors_display": StringAttributeClass, //
-        "isRecurringEvent": BooleanAttributeClass, //
-        "isTemplate": BooleanAttributeClass, //
-        "isTemplate_display": BooleanAttributeClass, //
-        "language": StringAttributeClass, // The language of the webinar"]),
-        "language_display": StringAttributeClass, //
-        "makePaymentsDue": StringAttributeClass, //
-        "makePaymentsDue_display": StringAttributeClass, //
-        "manageRegistrationCount": StringAttributeClass, //
-        "manageRegistrationCount_display": StringAttributeClass, //
-        "maximumEventCapacity": StringAttributeClass, //
-        "maxNumberOfRegistrations": StringAttributeClass, //
-        "miscellaneousCosts": StringAttributeClass, //
-        "miscellaneousCostsBase": StringAttributeClass, // Value of the Miscellaneous Costs in base currency."]),
-        "notifyAuthoritiesOfEvent": StringAttributeClass, //
-        "notifyAuthoritiesOfEvent_display": StringAttributeClass, //
-        "planRegistration": StringAttributeClass, //
-        "planRegistration_display": StringAttributeClass, //
-        "presentationManagerUrl": UrlAttributeClass, // "]),
-        "primaryGoal": StringAttributeClass, //
-        "primaryGoal_display": StringAttributeClass, //
-        "primaryVenue": StringAttributeClass, //
-        "producer": StringAttributeClass, //
-        "publicEventUrl": UrlAttributeClass, // "]),
-        "publishStatus": StringAttributeClass, //
-        "publishStatus_display": StringAttributeClass, //
-        "readableEventID": StringAttributeClass, //
-        "recurrencePattern": StringAttributeClass, //
-        "recurrentEventStatus": StringAttributeClass, //
-        "registrationCount": StringAttributeClass, // Registration count of the Event."]),
-        "registrationsTarget": StringAttributeClass, //
-        "requestSponsorship": StringAttributeClass, //
-        "requestSponsorship_display": StringAttributeClass, //
-        "revenueFromSponsorship": StringAttributeClass, //
-        "revenueFromSponsorshipBase": StringAttributeClass, // Value of the Revenue from Sponsorship in base currency."]),
-        "scheduleAirportPickups": StringAttributeClass, // Airport pickups scheduling status"]),
-        "scheduleAirportPickups_display": StringAttributeClass, //
-        "scheduleSessions": StringAttributeClass, //
-        "scheduleSessions_display": StringAttributeClass, //
-        "selectSpeakers": StringAttributeClass, //
-        "selectSpeakers_display": StringAttributeClass, //
-        "selectVendors": StringAttributeClass, //
-        "selectVendors_display": StringAttributeClass, //
-        "sendEventInvitation": StringAttributeClass, // Event invitation sending status"]),
-        "sendEventInvitation_display": StringAttributeClass, //
-        "sendMarketingMaterial": StringAttributeClass, //
-        "sendMarketingMaterial_display": StringAttributeClass, //
-        "sendPreEventReminders": StringAttributeClass, //
-        "sendPreEventReminders_display": StringAttributeClass, //
-        "sendThankYouEmails": StringAttributeClass, //
-        "sendThankYouEmails_display": StringAttributeClass, //
-        "showWaitlist": StringAttributeClass, //
-        "targetRevenue": StringAttributeClass, //
-        "targetRevenueBase": StringAttributeClass, // Value of the Target Revenue in base currency."]),
-        "teamDebriefing": StringAttributeClass, //
-        "teamDebriefing_display": StringAttributeClass, //
-        "totalCostOfEventsActivities": StringAttributeClass, //
-        "totalCostOfEventsActivitiesBase": StringAttributeClass, // Value of the Total Cost of Events Activities in base currency."]),
-        "totalCostOfExternalMembers": StringAttributeClass, //
-        "totalCostOfExternalMembersBase": StringAttributeClass, // Value of the Total cost of External Members in base currency."]),
-        "totalRegistrationFee": StringAttributeClass, //
-        "totalRegistrationFeeBase": StringAttributeClass, // Value of the Total Registration Fee in base currency."]),
-        "totalRevenueFromTheEvent": StringAttributeClass, //
-        "totalRevenueFromTheEventBase": StringAttributeClass, // Value of the Total Revenue from the event in base currency."]),
-        "waitlistStartingPoint": StringAttributeClass, // Waitlist Starting Point"]),
-        "waitlistthisEvent": StringAttributeClass, //
-        "waitlistthisEvent_display": StringAttributeClass, //
-        "webinarConfigurationId": UUIDAttributeClass, // Webinar Configuration"]),
-        "webinarID": StringAttributeClass, // Webinar ID of the Event."]),
-        "webinarNotificationSeen": StringAttributeClass, // Whether the webinar creation notification has been seen or not"]),
-        "webinarOperation": StringAttributeClass, //
-        "webinarStatus": StringAttributeClass, //
-        "webinarStatusReason": StringAttributeClass, //
-        "webinarType": StringAttributeClass, //
-        "webinarUrl": UrlAttributeClass, // URL of the webinar. This might be URL of external webinar provider."]),
-        "sendSurveys": StringAttributeClass, //
-        "sendSurveys_display": StringAttributeClass, //
-        "eventURLspecified": StringAttributeClass, // Determines whether an event URL is specified."]),
-        "sessionsCount": StringAttributeClass, // The number of sessions in this event"]),
-        "sessionsCountDate": DateAttributeClass, // Last Updated time of rollup field Session count."]),
-        "sessionsCountState": StringAttributeClass, // State of rollup field Session count."]),
-        "allowAnonymousRegistrations": StringAttributeClass, //
-        "portalBannerImage": StringAttributeClass, // The portal banner image."]),
-        "eventUrl": UrlAttributeClass, // "])
+        "createdOnBehalfBy": StringAttribute, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": StringAttribute, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": StringAttribute, // Date and time that the record was migrated."]),
+        "importSequenceNumber": IntegerAttribute, //Sequence number of the import that created this record."]),
+        "ownerId": UUIDAttribute, // Owner Id"]),
+        "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
+        "owningBusinessUnitId": UUIDAttribute, //Unique identifier for the business unit that owns the record"]),
+        "owningUserId": StringAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningTeamId": StringAttribute, // Unique identifier for the team that owns the record."]),
+        "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]),
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
+        "eventId": UUIDAttribute, // Unique identifier for entity instances"]),
+        "stateCode": StringAttribute, // Status of the Event"]),
+        "stateCode_display": StringAttribute, //
+        "statusCode": StringAttribute, // Reason for the status of the Event"]),
+        "statusCode_display": StringAttribute, //
+        "processId": UUIDAttribute, // Contains the id of the process associated with the entity."]),
+        "stageId": UUIDAttribute, // Contains the id of the stage where the entity is located."]),
+        "traversedPath": StringAttribute, // A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur."]),
+        "entityImageId": UUIDAttribute, //
+        "baseRecurrentEventID": StringAttribute, //
+        "bookedFlightReservations": StringAttribute, // Flight reservations booking status"]),
+        "bookedFlightReservations_display": StringAttribute, //
+        "bookRooms": StringAttribute, //
+        "bookRooms_display": StringAttribute, //
+        "budgetAllocated": StringAttribute, //
+        "transactionCurrencyId": CurrencyIdAttribute, // Unique identifier of the currency associated with the entity."]),
+        "exchangeRate": StringAttribute, // Exchange rate for the currency associated with the entity with respect to the base currency."]),
+        "budgetAllocatedBase": StringAttribute, // Value of the Budget Allocated in base currency."]),
+        "cateringRequired": StringAttribute, //
+        "cateringRequired_display": StringAttribute, //
+        "checkInCount": StringAttribute, // Check-in count"]),
+        "confirmedHotelChoices": StringAttribute, // Hotel choices confirmation status"]),
+        "confirmedHotelChoices_display": StringAttribute, //
+        "countdownInDays": StringAttribute, //
+        "createMarketingCollateral": StringAttribute, //
+        "createMarketingCollateral_display": StringAttribute, //
+        "definePackagesandPricing": StringAttribute, //
+        "definePackagesandPricing_display": StringAttribute, //
+        "defineSessions": StringAttribute, //
+        "defineSessions_display": StringAttribute, //
+        "defineTeam": StringAttribute, //
+        "defineTeam_display": StringAttribute, //
+        "description": StringAttribute, //
+        "developMarketingPlan": StringAttribute, //
+        "developMarketingPlan_display": StringAttribute, //
+        "earlyBirdCutOffDate": DateAttribute, // 
+        "eventDebriefing": StringAttribute, //
+        "eventDebriefing_display": StringAttribute, //
+        "eventEndDate": DateAttribute, // 
+        "eventFormat": StringAttribute, //
+        "eventFormat_display": StringAttribute, //
+        "eventStartDate": DateAttribute, // 
+        "eventTimeZone": StringAttribute, //
+        "eventTimeZoneName": StringAttribute, //
+        "eventType": StringAttribute, //
+        "eventType_display": StringAttribute, //
+        "eventVenueCost": StringAttribute, //
+        "eventVenueCostBase": StringAttribute, // Value of the Event Venue Cost in base currency."]),
+        "expectedOutcome": StringAttribute, //
+        "followUpOnLeads": StringAttribute, //
+        "followUpOnLeads_display": StringAttribute, //
+        "guestLogistics": StringAttribute, // Whether guest logistics are required or not."]),
+        "guestLogistics_display": StringAttribute, //
+        "identifySpeakers": StringAttribute, //
+        "identifySpeakers_display": StringAttribute, //
+        "identifySponsors": StringAttribute, //
+        "identifySponsors_display": StringAttribute, //
+        "isRecurringEvent": BooleanAttribute, //
+        "isTemplate": BooleanAttribute, //
+        "isTemplate_display": BooleanAttribute, //
+        "language": StringAttribute, // The language of the webinar"]),
+        "language_display": StringAttribute, //
+        "makePaymentsDue": StringAttribute, //
+        "makePaymentsDue_display": StringAttribute, //
+        "manageRegistrationCount": StringAttribute, //
+        "manageRegistrationCount_display": StringAttribute, //
+        "maximumEventCapacity": StringAttribute, //
+        "maxNumberOfRegistrations": StringAttribute, //
+        "miscellaneousCosts": StringAttribute, //
+        "miscellaneousCostsBase": StringAttribute, // Value of the Miscellaneous Costs in base currency."]),
+        "notifyAuthoritiesOfEvent": StringAttribute, //
+        "notifyAuthoritiesOfEvent_display": StringAttribute, //
+        "planRegistration": StringAttribute, //
+        "planRegistration_display": StringAttribute, //
+        "presentationManagerUrl": UrlAttribute, // "]),
+        "primaryGoal": StringAttribute, //
+        "primaryGoal_display": StringAttribute, //
+        "primaryVenue": StringAttribute, //
+        "producer": StringAttribute, //
+        "publicEventUrl": UrlAttribute, // "]),
+        "publishStatus": StringAttribute, //
+        "publishStatus_display": StringAttribute, //
+        "readableEventID": StringAttribute, //
+        "recurrencePattern": StringAttribute, //
+        "recurrentEventStatus": StringAttribute, //
+        "registrationCount": StringAttribute, // Registration count of the Event."]),
+        "registrationsTarget": StringAttribute, //
+        "requestSponsorship": StringAttribute, //
+        "requestSponsorship_display": StringAttribute, //
+        "revenueFromSponsorship": StringAttribute, //
+        "revenueFromSponsorshipBase": StringAttribute, // Value of the Revenue from Sponsorship in base currency."]),
+        "scheduleAirportPickups": StringAttribute, // Airport pickups scheduling status"]),
+        "scheduleAirportPickups_display": StringAttribute, //
+        "scheduleSessions": StringAttribute, //
+        "scheduleSessions_display": StringAttribute, //
+        "selectSpeakers": StringAttribute, //
+        "selectSpeakers_display": StringAttribute, //
+        "selectVendors": StringAttribute, //
+        "selectVendors_display": StringAttribute, //
+        "sendEventInvitation": StringAttribute, // Event invitation sending status"]),
+        "sendEventInvitation_display": StringAttribute, //
+        "sendMarketingMaterial": StringAttribute, //
+        "sendMarketingMaterial_display": StringAttribute, //
+        "sendPreEventReminders": StringAttribute, //
+        "sendPreEventReminders_display": StringAttribute, //
+        "sendThankYouEmails": StringAttribute, //
+        "sendThankYouEmails_display": StringAttribute, //
+        "showWaitlist": StringAttribute, //
+        "targetRevenue": StringAttribute, //
+        "targetRevenueBase": StringAttribute, // Value of the Target Revenue in base currency."]),
+        "teamDebriefing": StringAttribute, //
+        "teamDebriefing_display": StringAttribute, //
+        "totalCostOfEventsActivities": StringAttribute, //
+        "totalCostOfEventsActivitiesBase": StringAttribute, // Value of the Total Cost of Events Activities in base currency."]),
+        "totalCostOfExternalMembers": StringAttribute, //
+        "totalCostOfExternalMembersBase": StringAttribute, // Value of the Total cost of External Members in base currency."]),
+        "totalRegistrationFee": StringAttribute, //
+        "totalRegistrationFeeBase": StringAttribute, // Value of the Total Registration Fee in base currency."]),
+        "totalRevenueFromTheEvent": StringAttribute, //
+        "totalRevenueFromTheEventBase": StringAttribute, // Value of the Total Revenue from the event in base currency."]),
+        "waitlistStartingPoint": StringAttribute, // Waitlist Starting Point"]),
+        "waitlistthisEvent": StringAttribute, //
+        "waitlistthisEvent_display": StringAttribute, //
+        "webinarConfigurationId": UUIDAttribute, // Webinar Configuration"]),
+        "webinarID": StringAttribute, // Webinar ID of the Event."]),
+        "webinarNotificationSeen": StringAttribute, // Whether the webinar creation notification has been seen or not"]),
+        "webinarOperation": StringAttribute, //
+        "webinarStatus": StringAttribute, //
+        "webinarStatusReason": StringAttribute, //
+        "webinarType": StringAttribute, //
+        "webinarUrl": UrlAttribute, // URL of the webinar. This might be URL of external webinar provider."]),
+        "sendSurveys": StringAttribute, //
+        "sendSurveys_display": StringAttribute, //
+        "eventURLspecified": StringAttribute, // Determines whether an event URL is specified."]),
+        "sessionsCount": StringAttribute, // The number of sessions in this event"]),
+        "sessionsCountDate": DateAttribute, // Last Updated time of rollup field Session count."]),
+        "sessionsCountState": StringAttribute, // State of rollup field Session count."]),
+        "allowAnonymousRegistrations": StringAttribute, //
+        "portalBannerImage": StringAttribute, // The portal banner image."]),
+        "eventUrl": UrlAttribute, // "])
       ])
       .registerPath("marketing_event");
   }

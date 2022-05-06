@@ -12,39 +12,39 @@ class DMRKEmail : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": StringAttributeClass, // Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": StringAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": StringAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": IntegerAttributeClass, //Sequence number of the import that created this record."]),
-        "ownerId": StringAttributeClass, // Owner Id"]),
-        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": UUIDAttributeClass, //Unique identifier for the business unit that owns the record"]),
-        "owningUser": StringAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeam": StringAttributeClass, // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": IntegerAttributeClass, //For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "marketingEmailId": StringAttributeClass, // Unique ID for entity instances."]),
-        "stateCode": StringAttributeClass, // Status of the Marketing Email"]),
-        "stateCode_display": StringAttributeClass, //
-        "statusCode": StringAttributeClass, // Marketing email status reason"]),
-        "statusCode_display": StringAttributeClass, //
-        "automaticallyGeneratePlainText": StringAttributeClass, //
-        "clickMap": StringAttributeClass, //
-        "designerHTML": StringAttributeClass, // Clean email body: HTML with no CSS inlining and no compression"]),
-        "emailBody": StringAttributeClass, // The body of the email"]),
-        "fromEmail": StringAttributeClass, //
-        "fromName": StringAttributeClass, //
-        "fromUser": StringAttributeClass, //
-        "insightsPlaceholder": StringAttributeClass, //
-        "isTemplategalleryNeeded": BooleanAttributeClass, //
-        "legalDesignation": StringAttributeClass, //
-        "legalDesignation_display": StringAttributeClass, //
-        "replyToEmail": StringAttributeClass, //
-        "subject": StringAttributeClass, // The subject of the marketing email"]),
-        "templateId": UUIDAttributeClass, // Template for the Email"]),
-        "plainText": StringAttributeClass, //
-        "to": StringAttributeClass, //
-        "UICEntityId": UUIDAttributeClass, //
+        "createdOnBehalfBy": StringAttribute, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": StringAttribute, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": StringAttribute, // Date and time that the record was migrated."]),
+        "importSequenceNumber": IntegerAttribute, //Sequence number of the import that created this record."]),
+        "ownerId": StringAttribute, // Owner Id"]),
+        "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
+        "owningBusinessUnitId": UUIDAttribute, //Unique identifier for the business unit that owns the record"]),
+        "owningUser": StringAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningTeam": StringAttribute, // Unique identifier for the team that owns the record."]),
+        "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]),
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
+        "marketingEmailId": StringAttribute, // Unique ID for entity instances."]),
+        "stateCode": StringAttribute, // Status of the Marketing Email"]),
+        "stateCode_display": StringAttribute, //
+        "statusCode": StringAttribute, // Marketing email status reason"]),
+        "statusCode_display": StringAttribute, //
+        "automaticallyGeneratePlainText": StringAttribute, //
+        "clickMap": StringAttribute, //
+        "designerHTML": StringAttribute, // Clean email body: HTML with no CSS inlining and no compression"]),
+        "emailBody": StringAttribute, // The body of the email"]),
+        "fromEmail": StringAttribute, //
+        "fromName": StringAttribute, //
+        "fromUser": StringAttribute, //
+        "insightsPlaceholder": StringAttribute, //
+        "isTemplategalleryNeeded": BooleanAttribute, //
+        "legalDesignation": StringAttribute, //
+        "legalDesignation_display": StringAttribute, //
+        "replyToEmail": StringAttribute, //
+        "subject": StringAttribute, // The subject of the marketing email"]),
+        "templateId": UUIDAttribute, // Template for the Email"]),
+        "plainText": StringAttribute, //
+        "to": StringAttribute, //
+        "UICEntityId": UUIDAttribute, //
       ])
       .registerPath("marketing_emails");
   }

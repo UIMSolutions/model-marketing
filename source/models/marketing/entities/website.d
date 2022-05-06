@@ -12,30 +12,30 @@ class DMRKWebsite : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": StringAttributeClass, // Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": StringAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": StringAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": IntegerAttributeClass, //Sequence number of the import that created this record."]),
-        "ownerId": StringAttributeClass, // Owner Id"]),
-        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": UUIDAttributeClass, //Unique identifier for the business unit that owns the record"]),
-        "owningUser": StringAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeam": StringAttributeClass, // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": IntegerAttributeClass, //For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "websiteId": StringAttributeClass, // Unique ID for entity instances."]),
-        "stateCode": StringAttributeClass, // Status of the Website"]),
-        "stateCode_display": StringAttributeClass, //
-        "statusCode": StringAttributeClass, // Website status reason"]),
-        "statusCode_display": StringAttributeClass, //
-        "insightsPlaceholder": StringAttributeClass, //
-        "javascriptcode": StringAttributeClass, //
-        "remoteWebsiteID": StringAttributeClass, // Unique ID for remote entity instances."]),
-        "shouldBeRemoved": StringAttributeClass, //
-        "timeout": StringAttributeClass, //
-        "Url": UrlAttributeClass, // "]),
-        "purpose": StringAttributeClass, //
-        "purpose_display": StringAttributeClass, //
+        "createdOnBehalfBy": StringAttribute, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": StringAttribute, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": StringAttribute, // Date and time that the record was migrated."]),
+        "importSequenceNumber": IntegerAttribute, //Sequence number of the import that created this record."]),
+        "ownerId": StringAttribute, // Owner Id"]),
+        "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
+        "owningBusinessUnitId": UUIDAttribute, //Unique identifier for the business unit that owns the record"]),
+        "owningUser": StringAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningTeam": StringAttribute, // Unique identifier for the team that owns the record."]),
+        "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]),
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
+        "websiteId": StringAttribute, // Unique ID for entity instances."]),
+        "stateCode": StringAttribute, // Status of the Website"]),
+        "stateCode_display": StringAttribute, //
+        "statusCode": StringAttribute, // Website status reason"]),
+        "statusCode_display": StringAttribute, //
+        "insightsPlaceholder": StringAttribute, //
+        "javascriptcode": StringAttribute, //
+        "remoteWebsiteID": StringAttribute, // Unique ID for remote entity instances."]),
+        "shouldBeRemoved": StringAttribute, //
+        "timeout": StringAttribute, //
+        "Url": UrlAttribute, // "]),
+        "purpose": StringAttribute, //
+        "purpose_display": StringAttribute, //
       ])
       .registerPath("marketing_website");
   }

@@ -12,37 +12,37 @@ class DMRKForm : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": StringAttributeClass, // Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": StringAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": StringAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": IntegerAttributeClass, //Sequence number of the import that created this record."]),
-        "ownerId": StringAttributeClass, // Owner Id"]),
-        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": UUIDAttributeClass, //Unique identifier for the business unit that owns the record"]),
-        "owningUser": StringAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeam": StringAttributeClass, // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": IntegerAttributeClass, //For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "marketingFormId": StringAttributeClass, // Unique ID for entity instances"]),
-        "stateCode": StringAttributeClass, // Status of the marketing form"]),
-        "stateCode_display": StringAttributeClass, //
-        "statusCode": StringAttributeClass, // Reason for the status of the marketing form"]),
-        "statusCode_display": StringAttributeClass, //
-        "allowPrefill": StringAttributeClass, //
-        "contactMatchingStrategy": StringAttributeClass, //
-        "updateContactsLeads": StringAttributeClass, //
-        "updateContactsLeads_display": StringAttributeClass, //
-        "marketingFormTemplate": StringAttributeClass, //
-        "formControlMapping": StringAttributeClass, //
-        "formDefinition": StringAttributeClass, // JSON definition of the fields related to the Marketing form entity."]),
-        "insightsPlaceholder": StringAttributeClass, //
-        "leadMatchingStrategy": StringAttributeClass, //
-        "validForPageType": StringAttributeClass, //
-        "validForPageType_display": StringAttributeClass, //
-        "purpose": StringAttributeClass, //
-        "purpose_display": StringAttributeClass, //
-        "visualStyle": StringAttributeClass, //
-        "visualStyle_display": StringAttributeClass, //
+        "createdOnBehalfBy": StringAttribute, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": StringAttribute, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": StringAttribute, // Date and time that the record was migrated."]),
+        "importSequenceNumber": IntegerAttribute, //Sequence number of the import that created this record."]),
+        "ownerId": StringAttribute, // Owner Id"]),
+        "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
+        "owningBusinessUnitId": UUIDAttribute, //Unique identifier for the business unit that owns the record"]),
+        "owningUser": StringAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningTeam": StringAttribute, // Unique identifier for the team that owns the record."]),
+        "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]),
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
+        "marketingFormId": StringAttribute, // Unique ID for entity instances"]),
+        "stateCode": StringAttribute, // Status of the marketing form"]),
+        "stateCode_display": StringAttribute, //
+        "statusCode": StringAttribute, // Reason for the status of the marketing form"]),
+        "statusCode_display": StringAttribute, //
+        "allowPrefill": StringAttribute, //
+        "contactMatchingStrategy": StringAttribute, //
+        "updateContactsLeads": StringAttribute, //
+        "updateContactsLeads_display": StringAttribute, //
+        "marketingFormTemplate": StringAttribute, //
+        "formControlMapping": StringAttribute, //
+        "formDefinition": StringAttribute, // JSON definition of the fields related to the Marketing form entity."]),
+        "insightsPlaceholder": StringAttribute, //
+        "leadMatchingStrategy": StringAttribute, //
+        "validForPageType": StringAttribute, //
+        "validForPageType_display": StringAttribute, //
+        "purpose": StringAttribute, //
+        "purpose_display": StringAttribute, //
+        "visualStyle": StringAttribute, //
+        "visualStyle_display": StringAttribute, //
       ])
       .registerPath("marketing_forms");
   }
