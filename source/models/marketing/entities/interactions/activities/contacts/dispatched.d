@@ -1,2 +1,2 @@
-module source.models.marketing.entities.interactions.activities.contacts.dispatched;
+module models.marketing.entities.interactions.activities.contacts.dispatched;
 

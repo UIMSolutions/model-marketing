@@ -1,2 +1,2 @@
-module source.models.marketing.entities.customerjourney;
+module models.marketing.entities.customerjourney;
 

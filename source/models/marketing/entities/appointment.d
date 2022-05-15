@@ -1,2 +1,2 @@
-module source.models.marketing.entities.appointment;
+module models.marketing.entities.appointment;
 

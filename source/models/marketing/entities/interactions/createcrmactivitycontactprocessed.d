@@ -1,2 +1,2 @@
-module source.models.marketing.entities.interactions.createcrmactivitycontactprocessed;
+module models.marketing.entities.interactions.createcrmactivitycontactprocessed;
 

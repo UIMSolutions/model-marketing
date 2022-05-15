@@ -1,2 +1,2 @@
-module source.models.marketing.entities.interactions.emails.blockbounced;
+module models.marketing.entities.interactions.emails.blockbounced;
 

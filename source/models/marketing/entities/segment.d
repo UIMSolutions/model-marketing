@@ -1,2 +1,2 @@
-module source.models.marketing.entities.segment;
+module models.marketing.entities.segment;
 

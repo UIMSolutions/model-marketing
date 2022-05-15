@@ -1,2 +1,2 @@
-module source.models.marketing.entities.interactions.CustomerJourneyContactRecordUpdated;
+module models.marketing.entities.interactions.CustomerJourneyContactRecordUpdated;
 

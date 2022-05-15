@@ -1,2 +1,2 @@
-module source.models.marketing.entities.leads.linkedin.genforms.genform;
+module models.marketing.entities.leads.linkedin.genforms.genform;
 

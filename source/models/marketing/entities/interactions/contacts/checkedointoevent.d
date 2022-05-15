@@ -1,2 +1,2 @@
-module source.models.marketing.entities.interactions.contacts.checkedointoevent;
+module models.marketing.entities.interactions.contacts.checkedointoevent;
 

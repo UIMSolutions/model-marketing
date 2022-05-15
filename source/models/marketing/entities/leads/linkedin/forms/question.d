@@ -1,2 +1,2 @@
-module source.models.marketing.entities.leads.linkedin.forms.question;
+module models.marketing.entities.leads.linkedin.forms.question;
 

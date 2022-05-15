@@ -1,2 +1,2 @@
-module source.models.marketing.entities.interactions.CreateCustomChannelActivityContactProcessed;
+module models.marketing.entities.interactions.CreateCustomChannelActivityContactProcessed;
 

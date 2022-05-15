@@ -1,2 +1,2 @@
-module source.models.marketing.entities.leads.lead;
+module models.marketing.entities.leads.lead;
 

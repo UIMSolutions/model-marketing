@@ -1,2 +1,2 @@
-module source.models.marketing.entities.task;
+module models.marketing.entities.task;
 

@@ -1,2 +1,2 @@
-module source.models.marketing.entities.connection;
+module models.marketing.entities.connection;
 

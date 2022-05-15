@@ -1,2 +1,2 @@
-module source.models.marketing.entities.contact;
+module models.marketing.entities.contact;
 
