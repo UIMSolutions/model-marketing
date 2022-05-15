@@ -4,19 +4,23 @@ module models.marketing.entities.page;
 import models.marketing;
 
 // 
-class DMRKPage : DOOPEntity {
-  mixin(EntityThis!("MRKPage"));
+class DMarketingPageEntity : DOOPEntity {
+  mixin(EntityThis!("MarketingPageEntity"));
 
   override void initialize() {
     super.initialize;
 
     this
       .addValues([
-        "createdOnBehalfBy": StringAttribute, // Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": StringAttribute, // Shows who last updated the record on behalf of another user."]),
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user."]),
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user."]),
+        OwnerIdAttribute, // Owner Id"]),
+        StateCodeAttribute, // Status of the marketing page"]),
+        StatusCodeAttribute, // Marketing page status reason"]),
+      ])
+      .addValues([
         "overriddenCreatedOn": StringAttribute, // Date and time that the record was migrated."]),
         "importSequenceNumber": IntegerAttribute, //Sequence number of the import that created this record."]),
-        "ownerId": StringAttribute, // Owner Id"]),
         "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttribute, //Unique identifier for the business unit that owns the record"]),
         "owningUser": StringAttribute, // Unique identifier of the user that owns the activity."]),
@@ -25,10 +29,6 @@ class DMRKPage : DOOPEntity {
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
         "versionNumber": IntegerAttribute, //Version Number"]),
         "marketingPageId": StringAttribute, // Unique ID for entity instances."]),
-        "stateCode": StringAttribute, // Status of the marketing page"]),
-        "stateCode_display": StringAttribute, //
-        "statusCode": StringAttribute, // Marketing page status reason"]),
-        "statusCode_display": StringAttribute, //
         "content": StringAttribute, //
         "contentType": StringAttribute, //
         "contentType_display": StringAttribute, //
@@ -62,13 +62,13 @@ class DMRKPage : DOOPEntity {
       .registerPath("marketing_pages");
   }
 }
-mixin(EntityCalls!("MRKPage"));  
+mixin(EntityCalls!("MarketingPageEntity"));  
 
 unittest {
   version(test_model_crm) {
-    assert(MRKPage);
+    assert(MarketingPageEntity);
   
-  auto entity = MRKPage;
+  auto entity = MarketingPageEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

@@ -4,19 +4,23 @@ module models.marketing.entities.list;
 import models.marketing;
 
 // Group of existing or potential customers created for a marketing campaign or other sales purposes.
-class DMRKList : DOOPEntity {
-  mixin(EntityThis!("MRKList"));
+class DMarketingListEntity : DOOPEntity {
+  mixin(EntityThis!("MarketingListEntity"));
 
   override void initialize() {
     super.initialize;
 
     this
       .addValues([
-        "createdOnBehalfBy": StringAttribute, // Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": StringAttribute, // Shows who last updated the record on behalf of another user."]),
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user."]),
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user."]),
+        OwnerIdAttribute, // Owner Id"]),
+        StateCodeAttribute, // Shows whether the marketing list is active or inactive. Inactive marketing lists are read-only and can't be edited unless they are reactivated."]),
+        StatusCodeAttribute, // Select the marketing list's status."]),
+      ])
+      .addValues([
         "overriddenCreatedOn": StringAttribute, // Date and time that the record was migrated."]),
         "importSequenceNumber": IntegerAttribute, //Sequence number of the import that created this record."]),
-        "ownerId": StringAttribute, // Owner Id"]),
         "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttribute, //Unique identifier for the business unit that owns the record"]),
         "owningUser": StringAttribute, // Unique identifier of the user that owns the activity."]),
@@ -44,23 +48,19 @@ class DMRKList : DOOPEntity {
         "purpose": StringAttribute, // Type the intended use of the marketing list to identify its key segments, target offers, or business group."]),
         "query": StringAttribute, // Query used for retrieving members of marketing list."]),
         "source": StringAttribute, // Type the source of the marketing list, such as a third-party supplier or internal database."]),
-        "stateCode": StringAttribute, // Shows whether the marketing list is active or inactive. Inactive marketing lists are read-only and can't be edited unless they are reactivated."]),
-        "stateCode_display": StringAttribute, //
-        "statusCode": StringAttribute, // Select the marketing list's status."]),
-        "statusCode_display": StringAttribute, //
         "type": StringAttribute, // Select whether you want the marketing list to be static or dynamic. The members in a static marketing list are unchanging. A dynamic marketing list is based on a dynamic query that retrieves the updated list of members"]),
-        "issubscription": StringAttribute, //
+        "isSubscription": StringAttribute, //
       ])
       .registerPath("marketing_lists");
   }
 }
-mixin(EntityCalls!("MRKList")); 
+mixin(EntityCalls!("MarketingListEntity")); 
 
 unittest {
   version(test_model_crm) {
-    assert(MRKList);
+    assert(MarketingListEntity);
   
-  auto entity = MRKList;
+  auto entity = MarketingListEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

@@ -4,19 +4,23 @@ module models.marketing.entities.forms.page;
 import models.marketing;
 
 // 
-  class DMRKFormPage : DOOPEntity {
-  mixin(EntityThis!("MRKFormPage"));
+  class DMarketingFormPageEntity : DOOPEntity {
+  mixin(EntityThis!("MarketingFormPageEntity"));
 
   override void initialize() {
     super.initialize;
 
     this
       .addValues([
-        "createdOnBehalfBy": StringAttribute, // Shows who created the record on behalf of another user."]), 
-        "modifiedOnBehalfBy": StringAttribute, // Shows who last updated the record on behalf of another user."]), 
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user."]), 
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user."]), 
+        OwnerIdAttribute, // Owner Id"]), 
+        StateCodeAttribute, // Status of the form page"]), 
+        StatusCodeAttribute, // Form page status reason"]), 
+      ])
+      .addValues([
         "overriddenCreatedOn": StringAttribute, // Date and time that the record was migrated."]), 
         "importSequenceNumber": IntegerAttribute, //Sequence number of the import that created this record."]), 
-        "ownerId": StringAttribute, // Owner Id"]), 
         "ownerIdType": StringAttribute, // The type of owner, either User or Team."]), 
         "owningBusinessUnitId": UUIDAttribute, //Unique identifier for the business unit that owns the record"]), 
         "owningUser": StringAttribute, // Unique identifier of the user that owns the activity."]), 
@@ -24,10 +28,6 @@ import models.marketing;
         "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]), 
         "UTCConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]), 
         "formpageId": StringAttribute, // Unique ID for entity instances."]), 
-        "stateCode": StringAttribute, // Status of the form page"]), 
-        "stateCode_display": StringAttribute, // 
-        "statusCode": StringAttribute, // Form page status reason"]), 
-        "statusCode_display": StringAttribute, // 
         "confirmationMessage": StringAttribute, // 
         "errorMessage": StringAttribute, // 
         "marketingFormId": StringAttribute, // Usage of a marketing form on a marketing page."]), 
@@ -37,16 +37,16 @@ import models.marketing;
         "redirectUrl": UrlAttribute, // "]), 
         "javascriptcode": StringAttribute, // 
       ])
-      .registerPath("marketing_formpage");
+      .registerPath("marketing_formpages");
   }
 }
-mixin(EntityCalls!("MRKFormPage"));
+mixin(EntityCalls!("MarketingFormPageEntity"));
 
 unittest {
   version(test_model_crm) {
-    assert(MRKFormPage);
+    assert(MarketingFormPageEntity);
   
-  auto entity = MRKFormPage;
+  auto entity = MarketingFormPageEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
