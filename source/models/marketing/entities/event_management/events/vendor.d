@@ -7,7 +7,7 @@ import models.marketing;
 class DMRKEventVendor : DOOPEntity {
   mixin(EntityThis!("MRKEventVendor"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

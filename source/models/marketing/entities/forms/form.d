@@ -7,7 +7,7 @@ import models.marketing;
 class DMarketingFormEntity : DOOPEntity {
   mixin(EntityThis!("MarketingFormEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
