@@ -8,7 +8,7 @@ class DMarketingEmailEntity : DOOPEntity {
   mixin(EntityThis!("MarketingEmailEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -27,7 +27,7 @@ class DMarketingEmailEntity : DOOPEntity {
         "owningTeam": StringAttribute, // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
-        "marketingEmailId": StringAttribute, // Unique ID for entity instances."]),
+        "marketingEmailId": UUIDAttribute, // Unique ID for entity instances."]),
         "automaticallyGeneratePlainText": StringAttribute, //
         "clickMap": StringAttribute, //
         "designerHTML": StringAttribute, // Clean email body: HTML with no CSS inlining and no compression"]),

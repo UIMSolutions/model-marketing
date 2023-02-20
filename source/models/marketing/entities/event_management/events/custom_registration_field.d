@@ -8,7 +8,7 @@ class DMRKEventCustomRegistrationField : DOOPEntity {
   mixin(EntityThis!("MRKEventCustomRegistrationField"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

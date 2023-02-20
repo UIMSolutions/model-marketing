@@ -8,7 +8,7 @@ class DMarketingPageEntity : DOOPEntity {
   mixin(EntityThis!("MarketingPageEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -28,7 +28,7 @@ class DMarketingPageEntity : DOOPEntity {
         "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
         "versionNumber": IntegerAttribute, //Version Number"]),
-        "marketingPageId": StringAttribute, // Unique ID for entity instances."]),
+        "marketingPageId": UUIDAttribute, // Unique ID for entity instances."]),
         "content": StringAttribute, //
         "contentType": StringAttribute, //
         "contentType_display": StringAttribute, //

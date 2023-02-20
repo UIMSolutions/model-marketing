@@ -8,7 +8,7 @@ class DMarketingWebsiteEntity : DOOPEntity {
   mixin(EntityThis!("MarketingWebsiteEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -28,7 +28,7 @@ class DMarketingWebsiteEntity : DOOPEntity {
         "owningTeam": StringAttribute, // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
-        "websiteId": StringAttribute, // Unique ID for entity instances."]),
+        "websiteId": UUIDAttribute, // Unique ID for entity instances."]),
         "insightsPlaceholder": StringAttribute, //
         "javascriptcode": StringAttribute, //
         "remoteWebsiteID": StringAttribute, // Unique ID for remote entity instances."]),

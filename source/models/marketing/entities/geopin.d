@@ -8,7 +8,7 @@ class DMRKGeoPin : DOOPEntity {
   mixin(EntityThis!("MRKGeoPin"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -27,35 +27,35 @@ class DMRKGeoPin : DOOPEntity {
         "owningTeam": StringAttribute, // Unique identifier for the team that owns the record."]), 
         "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]), 
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]), 
-        "geopinId": StringAttribute, // Unique ID for entity instances."]), 
-        "campaignGeoPinsId": StringAttribute, // Unique ID for the campaign associated with the geo pin."]), 
+        "geopinId": UUIDAttribute, // Unique ID for entity instances."]), 
+        "campaignGeoPinsId": UUIDAttribute, // Unique ID for the campaign associated with the geo pin."]), 
         "centerLatitude": StringAttribute, // 
         "centerLongitude": StringAttribute, // 
         "city": StringAttribute, // City"]), 
-        "contactGeoPinsId": StringAttribute, // Unique ID for the contact associated with the geo pin."]), 
+        "contactGeoPinsId": UUIDAttribute, // Unique ID for the contact associated with the geo pin."]), 
         "country": StringAttribute, // Country/Region"]), 
         "customerJourney": StringAttribute, // 
-        "marketingformGeoPinsId": StringAttribute, // Unique ID for the marketing form associated with the geo pin."]), 
+        "marketingformGeoPinsId": UUIDAttribute, // Unique ID for the marketing form associated with the geo pin."]), 
         "kpiEmailClickedCount": StringAttribute, // 
         "kpiEmailOpenedCount": StringAttribute, // 
         "kpiRedirectLinkClickedCount": StringAttribute, // 
         "kpiWebsiteClickedCount": StringAttribute, // 
         "kpiWebsiteVisitedCount": StringAttribute, // 
         "kpiFormSubmittedCount": StringAttribute, // 
-        "leadGeoPinsId": StringAttribute, // Unique ID for the lead associated with the geo pin."]), 
-        "marketingEmailGeoPinsId": StringAttribute, // Unique ID for the marketing email associated with the geo pin."]), 
-        "marketingPageGeoPinsId": StringAttribute, // Unique ID for the marketing page associated with the geo pin."]), 
+        "leadGeoPinsId": UUIDAttribute, // Unique ID for the lead associated with the geo pin."]), 
+        "marketingEmailGeoPinsId": UUIDAttribute, // Unique ID for the marketing email associated with the geo pin."]), 
+        "marketingPageGeoPinsId": UUIDAttribute, // Unique ID for the marketing page associated with the geo pin."]), 
         "northwestLatitude": StringAttribute, // 
         "northwestLongitude": StringAttribute, // 
         "postalCode": StringAttribute, // Postal Code"]), 
-        "redirectURLGeoPinsId": StringAttribute, // Unique ID for the redirect URL associated with the geo pin."]), 
+        "redirectURLGeoPinsId": UUIDAttribute, // Unique ID for the redirect URL associated with the geo pin."]), 
         "requestBuilderService_mktgeopins": StringAttribute, // 
         "resultParserService_mktgeopins": StringAttribute, // 
         "serverIdMarketing": StringAttribute, // 
         "southeastLatitude": StringAttribute, // 
         "southeastLongitude": StringAttribute, // 
         "state": StringAttribute, // State"]), 
-        "websiteGeoPinsId": StringAttribute, // Unique ID for the website associated with the geo pin."]), 
+        "websiteGeoPinsId": UUIDAttribute, // Unique ID for the website associated with the geo pin."]), 
       ])
       .registerPath("marketing_geopins");
   }

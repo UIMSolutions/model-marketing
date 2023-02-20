@@ -8,7 +8,7 @@ class DMarketingListEntity : DOOPEntity {
   mixin(EntityThis!("MarketingListEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -28,13 +28,13 @@ class DMarketingListEntity : DOOPEntity {
         "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
         "versionNumber": IntegerAttribute, //Version Number"]),
-        "listId": StringAttribute, // Unique identifier of the marketing list."]),
+        "listId": UUIDAttribute, // Unique identifier of the marketing list."]),
         "listName": StringAttribute, // Type a name for the marketing list so that it is identified correctly in lists."]),
-        "processId": StringAttribute, // Contains the id of the process associated with the entity."]),
-        "stageId": StringAttribute, // Contains the id of the stage where the entity is located."]),
+        "processId": UUIDAttribute, // Contains the id of the process associated with the entity."]),
+        "stageId": UUIDAttribute, // Contains the id of the stage where the entity is located."]),
         "traversedPath": StringAttribute, // A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur."]),
         "cost": StringAttribute, // Type the cost of obtaining the marketing list."]),
-        "transactionCurrencyId": StringAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency."]),
+        "transactionCurrencyId": UUIDAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency."]),
         "exchangeRate": StringAttribute, // Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency."]),
         "costBase": StringAttribute, // Value of the Cost in base currency."]),
         "createdFromCode": StringAttribute, // Select the type of members that this marketing list will contain: accounts, contacts, or leads. Each list can have only one member type and this value can't be changed after the marketing list is created."]),
