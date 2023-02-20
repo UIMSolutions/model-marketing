@@ -64,8 +64,7 @@ class DMarketingPageEntity : DOOPEntity {
 }
 mixin(EntityCalls!("MarketingPageEntity"));  
 
-unittest {
-  version(test_model_crm) {
+version(test_model_crm) { unittest {
     assert(MarketingPageEntity);
   
   auto entity = MarketingPageEntity;

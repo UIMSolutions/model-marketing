@@ -62,8 +62,7 @@ class DMRKGeoPin : DOOPEntity {
 }
 mixin(EntityCalls!("MRKGeoPin")); 
 
-unittest {
-  version(test_model_crm) {
+version(test_model_crm) { unittest {
     assert(MRKGeoPin);
   
   auto entity = MRKGeoPin;

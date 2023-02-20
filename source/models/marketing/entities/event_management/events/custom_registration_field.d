@@ -37,8 +37,7 @@ class DMRKEventCustomRegistrationField : DOOPEntity {
 }
 mixin(EntityCalls!("MRKEventCustomRegistrationField")); 
 
-unittest {
-  version(test_model_crm) {
+version(test_model_crm) { unittest {
     assert(MRKEventCustomRegistrationField);
   
   auto entity = MRKEventCustomRegistrationField;
