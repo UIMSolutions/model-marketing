@@ -7,7 +7,7 @@ import models.marketing;
 class DMarketingListEntity : DOOPEntity {
   mixin(EntityThis!("MarketingListEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

@@ -7,7 +7,7 @@ import models.marketing;
 class DMRKGeoPin : DOOPEntity {
   mixin(EntityThis!("MRKGeoPin"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
