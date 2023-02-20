@@ -8,7 +8,7 @@ class DMarketingFormEntity : DOOPEntity {
   mixin(EntityThis!("MarketingFormEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -27,7 +27,7 @@ class DMarketingFormEntity : DOOPEntity {
         "owningTeam": StringAttribute, // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
-        "marketingFormId": StringAttribute, // Unique ID for entity instances"]),
+        "marketingFormId": UUIDAttribute, // Unique ID for entity instances"]),
         "allowPrefill": StringAttribute, //
         "contactMatchingStrategy": StringAttribute, //
         "updateContactsLeads": StringAttribute, //

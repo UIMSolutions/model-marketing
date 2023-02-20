@@ -8,7 +8,7 @@ import models.marketing;
   mixin(EntityThis!("MarketingFormPageEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -27,10 +27,10 @@ import models.marketing;
         "owningTeam": StringAttribute, // Unique identifier for the team that owns the record."]), 
         "timeZoneRuleVersionNumber": IntegerAttribute, //For internal use only."]), 
         "UTCConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]), 
-        "formpageId": StringAttribute, // Unique ID for entity instances."]), 
+        "formpageId": UUIDAttribute, // Unique ID for entity instances."]), 
         "confirmationMessage": StringAttribute, // 
         "errorMessage": StringAttribute, // 
-        "marketingFormId": StringAttribute, // Usage of a marketing form on a marketing page."]), 
+        "marketingFormId": UUIDAttribute, // Usage of a marketing form on a marketing page."]), 
         "limitExceededMessage": StringAttribute, // 
         "marketingPage": StringAttribute, // The marketing page contains a marketing form."]), 
         "webSite": StringAttribute, // Web site contains Marketing Form"]), 
