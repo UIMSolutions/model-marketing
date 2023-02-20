@@ -42,8 +42,7 @@ import models.marketing;
 }
 mixin(EntityCalls!("MarketingFormPageEntity"));
 
-unittest {
-  version(test_model_crm) {
+version(test_model_crm) { unittest {
     assert(MarketingFormPageEntity);
   
   auto entity = MarketingFormPageEntity;

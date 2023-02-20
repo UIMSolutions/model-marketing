@@ -39,8 +39,7 @@ class DMRKEventVendor : DOOPEntity {
 }
 mixin(EntityCalls!("MRKEventVendor"));
 
-unittest {
-  version(test_model_crm) {
+version(test_model_crm) { unittest {
     assert(MRKEventVendor);
   
   auto entity = MRKEventVendor;
