@@ -1,7 +1,10 @@
 module models.marketing.entities.leads;
 
-@safe:
-import models.marketing;
+public { // Packages
+  import models.marketing.entities.leads.linkedin;
+  import models.marketing.entities.leads.marketing;
+}
 
-public import models.marketing.entities.leads.linkedin;
-public import models.marketing.entities.leads.marketing;
+public { // Modules
+  import models.marketing.entities.leads.lead;
+}

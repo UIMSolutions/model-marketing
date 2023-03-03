@@ -1,4 +1,6 @@
 module models.marketing.entities.leads.linkedin.genforms;
 
-@safe:
-import models.marketing;
+public {
+  import models.marketing.entities.leads.linkedin.genforms.genform;
+  import models.marketing.entities.leads.linkedin.genforms.submission;
+}

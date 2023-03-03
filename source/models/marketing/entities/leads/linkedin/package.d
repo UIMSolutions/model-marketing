@@ -1,4 +1,11 @@
 module models.marketing.entities.leads.linkedin;
 
-@safe:
-import models.marketing;
+public { // Packages
+  import models.marketing.entities.leads.linkedin.forms;
+  import models.marketing.entities.leads.linkedin.genforms;
+}
+
+public { // Modules
+  import models.marketing.entities.leads.linkedin.forms;
+  import models.marketing.entities.leads.linkedin.genforms;
+}
