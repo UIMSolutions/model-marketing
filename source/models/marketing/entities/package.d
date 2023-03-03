@@ -1,17 +1,16 @@
 module models.marketing.entities;
 
-@safe:
-import models.marketing;
+public { // Packages
+  import models.marketing.entities.event_management;
+  import models.marketing.entities.forms;
+  import models.marketing.entities.interactions;
+  import models.marketing.entities.leads;
+}
 
-// Packages
-public import models.marketing.entities.event_management;
-public import models.marketing.entities.forms;
-public import models.marketing.entities.interactions;
-public import models.marketing.entities.leads;
-
-// Moduls
-public import models.marketing.entities.email;
-public import models.marketing.entities.geopin;
-public import models.marketing.entities.list;
-public import models.marketing.entities.page;
-public import models.marketing.entities.website;
+public { // Moduls
+  import models.marketing.entities.email;
+  import models.marketing.entities.geopin;
+  import models.marketing.entities.list;
+  import models.marketing.entities.page;
+  import models.marketing.entities.website;
+}

@@ -1,6 +1,5 @@
 module models.marketing;
 
-@safe:
 public import std.stdio;
 public import std.string;
 public import std.uuid;
