@@ -4,7 +4,7 @@ module models.marketing.entities.email;
 import models.marketing;
 
 // 
-class DMarketingEmailEntity : DOOPEntity {
+class DMarketingEmailEntity : DEntity {
   mixin(EntityThis!("MarketingEmailEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

@@ -4,7 +4,7 @@ module models.marketing.entities.event_management.events.event;
 import models.marketing;
 
 // Container to manage and plan marketing activities that take place at a specific venue or location.
-class DMRKEvent : DOOPEntity {
+class DMRKEvent : DEntity {
   mixin(EntityThis!("MRKEvent"));
 
   override void initialize(DConfigurationValue configSettings = null) {

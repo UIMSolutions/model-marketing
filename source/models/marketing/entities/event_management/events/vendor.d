@@ -4,7 +4,7 @@ module models.marketing.entities.event_management.events.vendor;
 import models.marketing;
 
 // 
-class DMRKEventVendor : DOOPEntity {
+class DMRKEventVendor : DEntity {
   mixin(EntityThis!("MRKEventVendor"));
 
   override void initialize(DConfigurationValue configSettings = null) {

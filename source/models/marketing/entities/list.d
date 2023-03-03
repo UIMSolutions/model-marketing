@@ -4,7 +4,7 @@ module models.marketing.entities.list;
 import models.marketing;
 
 // Group of existing or potential customers created for a marketing campaign or other sales purposes.
-class DMarketingListEntity : DOOPEntity {
+class DMarketingListEntity : DEntity {
   mixin(EntityThis!("MarketingListEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

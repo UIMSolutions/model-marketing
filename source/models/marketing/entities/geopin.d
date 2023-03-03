@@ -4,7 +4,7 @@ module models.marketing.entities.geopin;
 import models.marketing;
 
 // 
-class DMRKGeoPin : DOOPEntity {
+class DMRKGeoPin : DEntity {
   mixin(EntityThis!("MRKGeoPin"));
 
   override void initialize(DConfigurationValue configSettings = null) {

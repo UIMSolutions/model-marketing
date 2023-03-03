@@ -4,7 +4,7 @@ module models.marketing.entities.event_management.events.team_member;
 import models.marketing;
 
 // 
-class DMRKEventTeamMember : DOOPEntity {
+class DMRKEventTeamMember : DEntity {
   mixin(EntityThis!("MRKEventTeamMember"));
 
   override void initialize(DConfigurationValue configSettings = null) {

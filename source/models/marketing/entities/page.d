@@ -4,7 +4,7 @@ module models.marketing.entities.page;
 import models.marketing;
 
 // 
-class DMarketingPageEntity : DOOPEntity {
+class DMarketingPageEntity : DEntity {
   mixin(EntityThis!("MarketingPageEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

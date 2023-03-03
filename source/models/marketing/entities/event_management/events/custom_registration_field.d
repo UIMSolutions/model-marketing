@@ -4,7 +4,7 @@ module models.marketing.entities.event_management.events.custom_registration_fie
 import models.marketing;
 
 // 
-class DMRKEventCustomRegistrationField : DOOPEntity {
+class DMRKEventCustomRegistrationField : DEntity {
   mixin(EntityThis!("MRKEventCustomRegistrationField"));
 
   override void initialize(DConfigurationValue configSettings = null) {
